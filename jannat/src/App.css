@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: lightblue;
+  padding:2px;
 }
 
 .App-logo {
@@ -8,10 +10,13 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #488214;
+  height: 50px;
+  padding: 0px;
   color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  border: solid white;
 }
 
 .App-title {

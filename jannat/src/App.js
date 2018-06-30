@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Home from './pages/Home/Home'
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h2 style={{display:'inline', float:'left', marginLeft:'10px', textDecoration: 'underline'}}>[ hamin ast... ]</h2>
+          <h3 style={{display:'inline'}}>Gar firdaus bar-rue zamin ast, hami asto, hamin asto, hamin ast...</h3>
+          <a href="" style={{display:'inline', float:'right', marginRight:'10px', color:'white'}}>signup</a>
+          <a href="" style={{display:'inline', float:'right', marginRight:'10px', color:'white'}}>login</a>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Home content="Jannat, coming soon...!"/>
       </div>
     );
   }
