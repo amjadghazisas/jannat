@@ -8,7 +8,7 @@ var app = express();
 
 app.use(express.static(__dirname+'/public'));
 
-const port = process.env.PORT || 2300;
+const port = process.env.PORT || 2300;//
 
 //The middleware is not called for root path
 app.use((req, res, next)=>{
