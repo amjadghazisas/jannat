@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Home from './pages/Home/Home'
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login'
 
 class App extends Component {
 
   render() {
     return (
+      //<Home content="Jannat, coming soon...!"/>
       <div className="App">
         <header className="App-header">
           <h2 style={{display:'inline', float:'left', marginLeft:'10px', textDecoration: 'underline'}}>[ hamin ast... ]</h2>
@@ -14,10 +16,12 @@ class App extends Component {
           <a href="" style={{display:'inline', float:'right', marginRight:'10px', color:'white'}}>signup</a>
           <a href="" style={{display:'inline', float:'right', marginRight:'10px', color:'white'}}>login</a>
         </header>
-        <Home content="Jannat, coming soon...!"/>
+        <Login></Login>
+        
       </div>
     );
   }
 }
 
 export default App;
+  

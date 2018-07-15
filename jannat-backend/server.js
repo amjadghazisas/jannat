@@ -8,6 +8,15 @@ var app = express();
 
 app.use(express.static(__dirname+'/public'));
 
+const port = process.env.PORT || 2300;
+
+//The middleware is not called for root path
+app.use((req, res, next)=>{
+
+    console.log(req.url + req.method);
+    next();
+});
+
 app.get('/',(req, res) => {
 
     //send html data back
@@ -28,12 +37,14 @@ app.get('/login',(req, res) => {
     res.send("<h1>Login..</h1>  ");
 });
 
-app.get('/getOTP',(req, res) => {
+app.get('/generateOTP',(req, res) => {
 
-    OTPService.getOTP();
+    OTPService.generateOTP();
+
+    res.send("success");
 });
 
-app.listen(2300,() => {
+app.listen(port,() => {
 
-    console.log("Running at port 2300");
+    console.log("Running at port "+port);
 });
